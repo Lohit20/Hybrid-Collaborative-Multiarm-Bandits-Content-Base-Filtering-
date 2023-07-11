@@ -15,7 +15,7 @@ Our project employs a hybrid approach that combines Collaborative Multiarm Bandi
 # Implementation
 The implementation code provided in the repository performs the following steps:
 
-•Loads the necessary libraries and datasets (movies and ratings).
+- Loads the necessary libraries and datasets (movies and ratings).
 
 •Preprocesses the data by converting user and movie IDs to 0-based indices and creating a pivot table with zero-filled missing values.
 
