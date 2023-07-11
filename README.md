@@ -1,4 +1,4 @@
-# Hybrid(Collaborative Multiarm Bandits + Content Base Filtering) Recommendation System
+# Hybrid(Collaborative Multiarm Bandits + Content Base Filtering) Reinforcement Learning Recommendation System
 
 # Overview
 This repository implements a hybrid recommendation system that combines Collaborative Multiarm Bandits and Content-Based Filtering techniques. The system leverages the advantages of both approaches to provide accurate and diverse recommendations to users. Collaborative Multiarm Bandits allow for adaptive exploration of user preferences, while Content-Based Filtering utilizes item characteristics to make personalized recommendations. By combining these two methods, the system achieves a robust and efficient recommendation mechanism. The repository contains the necessary code and resources to implement and experiment with this hybrid recommendation system.
