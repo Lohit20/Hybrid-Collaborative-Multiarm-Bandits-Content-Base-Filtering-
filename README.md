@@ -30,3 +30,5 @@ Defines a function recommendation to recommend movies based on the calculated si
 Prompts the user to enter a user ID and retrieves the recommended movies using collaborative multi-armed bandits.
 Displays the top 10 recommended movies and the top 3 recommended movies using content-based filtering.
 The provided code allows for a hybrid recommendation system that combines the strengths of both Collaborative Multiarm Bandits and Content-Based Filtering techniques to generate accurate and diverse movie recommendations for users.
+
+
