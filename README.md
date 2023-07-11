@@ -4,7 +4,7 @@
 This repository implements a hybrid recommendation system that combines Collaborative Multiarm Bandits and Content-Based Filtering techniques. The system leverages the advantages of both approaches to provide accurate and diverse recommendations to users. Collaborative Multiarm Bandits allow for adaptive exploration of user preferences, while Content-Based Filtering utilizes item characteristics to make personalized recommendations. By combining these two methods, the system achieves a robust and efficient recommendation mechanism. The repository contains the necessary code and resources to implement and experiment with this hybrid recommendation system.
 
 # Dataset
-We utilized the MovieLens dataset, a widely used benchmark dataset for recommendation systems. The dataset contains a large collection of movie ratings provided by users, along with movie metadata such as genre, release year, and tags. This dataset served as the foundation for training and evaluating our recommendation system.
+This project utilized the MovieLens dataset, a widely used benchmark dataset for recommendation systems. The dataset contains a large collection of movie ratings provided by users, along with movie metadata such as genre, release year, and tags. This dataset served as the foundation for training and evaluating our recommendation system.
 
 # Data Preprocessing
 The user and movie IDs in the ratings dataset are converted to 0-based indices by subtracting 1 from their values. The ratings dataset is merged with the movies dataset based on the movie ID. The resulting merged dataset is then transformed into a pivot table, where rows represent users, columns represent movies, and values represent ratings. Any missing values are filled with zeros. The pivot table is then converted into a NumPy array for further processing.
@@ -34,6 +34,11 @@ The implementation code provided in the repository performs the following steps:
      
 - The provided code allows for a hybrid recommendation system that combines the strengths of both Collaborative Multiarm Bandits and Content-Based Filtering techniques to generate accurate and diverse movie recommendations for users.
 
+# Results
+This recommendation system achieved promising results in terms of accuracy and personalized movie recommendations. The collaborative multi-armed bandit approach allowed us to provide users with relevant and diverse movie suggestions while learning from their feedback. The evaluation metrics demonstrated the effectiveness of this system in capturing user preferences and improving movie recommendations over time.
+
+# Conclusion
+In conclusion, this project successfully developed a movie recommendation system using collaborative multi-armed bandit approach on the MovieLens dataset. The system demonstrated the ability to provide personalized movie recommendations based on user preferences, improving over time through the multi-armed bandit algorithm. This project highlights the potential of combining collaborative filtering techniques with bandit algorithms for effective and personalized movie recommendations. Future work could involve further refining the system, exploring hybrid recommendation approaches, and incorporating additional contextual information to enhance the accuracy and relevance of the recommendations.
 
 
 
