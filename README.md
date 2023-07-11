@@ -16,25 +16,23 @@ Our project employs a hybrid approach that combines Collaborative Multiarm Bandi
 The implementation code provided in the repository performs the following steps:
 
 - Loads the necessary libraries and datasets (movies and ratings).
-
-•Preprocesses the data by converting user and movie IDs to 0-based indices and creating a pivot table with zero-filled missing values.
-
-•Implements the collaborative multi-armed bandit algorithm:
-
-  1. Defines a function select_movie to choose the next movie to play based on the current values and an exploration parameter.
-  2. Defines the main function bandit_collaborative_filtering that initializes the bandit algorithm, sets exploration parameters, and runs the bandit algorithm for a specified number of iterations.
-  3. Updates the number of plays and total reward for each movie based on user ratings.
-  4. Calculates and updates the value of each movie based on the updated reward and number of plays.
-  5. Recommends the top 10 movies based on the final values, excluding already rated movies.
+- Preprocesses the data by converting user and movie IDs to 0-based indices and creating a pivot table with zero-filled missing values.
+- Implements the collaborative multi-armed bandit algorithm:
   
-•Implements content-based filtering:
-  1. Defines a function user_profile to create a user profile based on movie ratings and genres.
-  2. Defines a function similarity to calculate the cosine similarity between the user profile and movie profiles.
-  3. Defines a function recommendation to recommend movies based on the calculated similarities.
-  4. Prompts the user to enter a user ID and retrieves the recommended movies using collaborative multi-armed bandits.
-  5. Displays the top 10 recommended movies using collaborative multi-armed bandits and then from that movies the top 3 recommended movies filtered using content-based filtering.
+    1. Defines a function select_movie to choose the next movie to play based on the current values and an exploration parameter.
+    2. Defines the main function bandit_collaborative_filtering that initializes the bandit algorithm, sets exploration parameters, and runs the bandit algorithm for a specified number of iterations.
+    3. Updates the number of plays and total reward for each movie based on user ratings.
+    4. Calculates and updates the value of each movie based on the updated reward and number of plays.
+    5. Recommends the top 10 movies based on the final values, excluding already rated movies.
+  
+- Implements content-based filtering:
+    1. Defines a function user_profile to create a user profile based on movie ratings and genres.
+    2. Defines a function similarity to calculate the cosine similarity between the user profile and movie profiles.
+    3. Defines a function recommendation to recommend movies based on the calculated similarities.
+    4. Prompts the user to enter a user ID and retrieves the recommended movies using collaborative multi-armed bandits.
+    5. Displays the top 10 recommended movies using collaborative multi-armed bandits and then from that movies the top 3 recommended movies filtered using content-based filtering.
      
-The provided code allows for a hybrid recommendation system that combines the strengths of both Collaborative Multiarm Bandits and Content-Based Filtering techniques to generate accurate and diverse movie recommendations for users.
+- The provided code allows for a hybrid recommendation system that combines the strengths of both Collaborative Multiarm Bandits and Content-Based Filtering techniques to generate accurate and diverse movie recommendations for users.
 
 
 
