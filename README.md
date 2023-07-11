@@ -10,7 +10,7 @@ This project utilized the MovieLens dataset, a widely used benchmark dataset for
 The user and movie IDs in the ratings dataset are converted to 0-based indices by subtracting 1 from their values. The ratings dataset is merged with the movies dataset based on the movie ID. The resulting merged dataset is then transformed into a pivot table, where rows represent users, columns represent movies, and values represent ratings. Any missing values are filled with zeros. The pivot table is then converted into a NumPy array for further processing.
 
 # Methodology
-Our project employs a hybrid approach that combines Collaborative Multiarm Bandits and Content-Based Filtering techniques. Collaborative filtering is used to identify similar users and recommend movies based on their preferences. The multi-armed bandit algorithm allows for a balance between exploring new movie recommendations and exploiting known preferences to optimize the recommendations for individual users.
+This project employs a hybrid approach that combines Collaborative Multiarm Bandits and Content-Based Filtering techniques. Collaborative filtering is used to identify similar users and recommend movies based on their preferences. The multi-armed bandit algorithm allows for a balance between exploring new movie recommendations and exploiting known preferences to optimize the recommendations for individual users.
 
 # Implementation
 The implementation code provided in the repository performs the following steps:
